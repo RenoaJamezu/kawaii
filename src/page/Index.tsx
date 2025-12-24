@@ -8,22 +8,24 @@ export default function Index() {
   const { login, loading } = useAuth();
   const [code, setCode] = useState("");
   const [showAgain, setShowAgain] = useState(false);
+
   const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const success = await login(code);
-    if (!success) {
-      setShowAgain(true);
-    }
-    navigate("/dashboard");
+    if (success) {
+      navigate("/dashboard")
+    };
+    setShowAgain(true);
   }
 
   useEffect(() => {
     if (showAgain) {
-      const againTimer = window.setTimeout(() => navigate("/dashboard"), 4000);
-      return () => window.clearTimeout(againTimer);
+      const timer = window.setTimeout(() => navigate("/dashboard"), 4000);
+      return () => window.clearTimeout(timer);
     }
+    return;
   }, [showAgain, navigate]);
 
   if (showAgain) {

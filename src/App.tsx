@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './page/Index';
 import ProtectedRoutes from './components/ProtectedRoutes';
 import Layout from './page/dashboard/Layout';
-import DateProtectedRoutes from './components/DateProtectedRoutes';
 import Locked from './page/Locked';
 
 function App() {
@@ -14,10 +13,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Index />} />
 
-          <Route element={<ProtectedRoutes />}>
-            <Route element={<DateProtectedRoutes />}>
-              <Route path='/dashboard' element={<Layout />} />
-            </Route>
+          <Route element={
+            <ProtectedRoutes unlockDate={new Date("2025-12-28T00:00:00")} />
+          }>
+            <Route path='/dashboard' element={<Layout />} />
           </Route>
 
           <Route path='/locked' element={<Locked />} />
