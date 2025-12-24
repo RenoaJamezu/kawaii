@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function Index() {
   const { login, loading } = useAuth();
   const [code, setCode] = useState("");
+  const [showWelcome, setShowWelcome] = useState(false);
   const [showAgain, setShowAgain] = useState(false);
 
   const navigate = useNavigate();
@@ -15,18 +16,41 @@ export default function Index() {
     e.preventDefault();
     const success = await login(code);
     if (success) {
-      navigate("/dashboard")
+      setShowWelcome(true);
     };
     setShowAgain(true);
   }
 
   useEffect(() => {
-    if (showAgain) {
-      const timer = window.setTimeout(() => navigate("/dashboard"), 4000);
+    if (showWelcome) {
+      const timer = window.setTimeout(() => navigate("/dashboard/love-letter"), 5000);
+      return () => window.clearTimeout(timer);
+    } else if (showAgain) {
+      const timer = window.setTimeout(() => navigate("/dashboard"), 5000);
       return () => window.clearTimeout(timer);
     }
     return;
-  }, [showAgain, navigate]);
+  }, [showWelcome, showAgain, navigate]);
+
+  if (showWelcome) {
+    return (
+      <main className="h-screen bg-linear-to-br from-primary to-primary/85 flex flex-col items-center justify-center">
+        <h1 className="text-3xl md:text-7xl text-center font-display text-primary-foreground animate-pulse fade-slide-top caret-transparent">
+          Hi Love Welcomeee
+        </h1>
+
+        <p className="text-xl md:text-4xl text-center font-display text-primary-foreground animate-pulse fade-slide-top caret-transparent mb-2">
+          I love youuu
+        </p>
+
+        <img
+          src="/gifs/peach-and-goma-hugging.gif"
+          alt="peach-and-goma-hugging.gif"
+          className="w-1/3 md:w-48 fade-slide-top caret-transparent"
+        />
+      </main>
+    )
+  }
 
   if (showAgain) {
     return (
@@ -78,6 +102,7 @@ export default function Index() {
           {loading ? "Checking..." : "Enter"}
         </Button>
       </form>
+      <footer className="fixed bottom-0 italic opacity-20 text-center mb-3">© 2025 Lenor James Jamero</footer>
     </main>
   )
 }

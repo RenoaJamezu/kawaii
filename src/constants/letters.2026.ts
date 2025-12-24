@@ -1,0 +1,88 @@
+import type { LoveLetterMeta } from "./letters.meta";
+
+export const LETTERS_2026: LoveLetterMeta[] = [
+  {
+    id: "2026-01-28",
+    title: "",
+    date: "Jan 28, 2026",
+    unlockAt: new Date("2026-01-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_01_28",
+  },
+  {
+    id: "2026-02-28",
+    title: "",
+    date: "Feb 28, 2026",
+    unlockAt: new Date("2026-02-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_02_28",
+  },
+  {
+    id: "2026-03-28",
+    title: "",
+    date: "Mar 28, 2026",
+    unlockAt: new Date("2026-03-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_03_28",
+  },
+  {
+    id: "2026-04-28",
+    title: "",
+    date: "Apr 28, 2026",
+    unlockAt: new Date("2026-04-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_04_28",
+  },
+  {
+    id: "2026-05-28",
+    title: "",
+    date: "May 28, 2026",
+    unlockAt: new Date("2026-05-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_05_28",
+  },
+  {
+    id: "2026-06-28",
+    title: "",
+    date: "Jun 28, 2026",
+    unlockAt: new Date("2026-06-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_06_28",
+  },
+  {
+    id: "2026-07-28",
+    title: "",
+    date: "Jul 28, 2026",
+    unlockAt: new Date("2026-07-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_07_28",
+  },
+  {
+    id: "2026-08-28",
+    title: "",
+    date: "Aug 28, 2026",
+    unlockAt: new Date("2026-08-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_08_28",
+  },
+  {
+    id: "2026-09-28",
+    title: "",
+    date: "Sept 28, 2026",
+    unlockAt: new Date("2026-09-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_09_28",
+  },
+  {
+    id: "2026-10-28",
+    title: "",
+    date: "Oct 28, 2026",
+    unlockAt: new Date("2026-10-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_10_28",
+  },
+  {
+    id: "2026-11-28",
+    title: "",
+    date: "Nov 28, 2026",
+    unlockAt: new Date("2026-11-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_11_28",
+  },
+  {
+    id: "2026-12-28",
+    title: "",
+    date: "Dec 28, 2026",
+    unlockAt: new Date("2026-12-28T00:00:00").getTime(),
+    envKey: "VITE_LETTER_2026_12_28",
+  },
+];
