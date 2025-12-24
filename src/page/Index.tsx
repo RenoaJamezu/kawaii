@@ -45,8 +45,8 @@ export default function Index() {
         <h1 className="text-3xl md:text-7xl text-center font-display text-primary-foreground animate-pulse fade-slide-top caret-transparent">Welcome my loveeeeeeeee</h1>
         <p className="text-xl md:text-4xl text-center font-display text-primary-foreground animate-pulse fade-slide-top caret-transparent">But this is only accessible <br /><span>on our monthsary love sorry</span></p>
         <img
-          src="/public/gifs/peachcat-crying.gif"
-          alt="Rawr"
+          src="/gifs/peachcat-crying.gif"
+          alt="peachcat-crying.gif"
           className="w-1/3 md:w-48 fade-slide-top caret-transparent"
         />
       </main>
@@ -59,8 +59,8 @@ export default function Index() {
         <h1 className="text-3xl md:text-7xl text-center font-display text-primary-foreground animate-pulse fade-slide-top caret-transparent">Wrong code loveeee</h1>
         <p className="text-xl md:text-4xl text-center font-display text-primary-foreground animate-pulse fade-slide-top caret-transparent mb-2">try againnnn</p>
         <img
-          src="/public/gifs/rawr.gif"
-          alt="Rawr"
+          src="/gifs/rawr.gif"
+          alt="rawr.gif"
           className="w-1/3 md:w-48 fade-slide-top caret-transparent"
         />
       </main>
@@ -74,8 +74,8 @@ export default function Index() {
         className="bg-white rounded-xl p-10 flex flex-col items-center shadow gap-4"
       >
         <img
-          src="/public/gifs/cat-in-peach-box.gif"
-          alt="Rawr"
+          src="/gifs/cat-in-peach-box.gif"
+          alt="cat-in-peach-box.gif"
           className="w-1/2 fade-slide-top caret-transparent mb-2"
         />
         <h1 className="text-primary text-3xl md:text-5xl font-display font-bold caret-transparent">Enter our secret code</h1>
