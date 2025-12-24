@@ -20,7 +20,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         if (code !== passcode) {
           resolve(false);
         } else {
-          setIsAuthenticated(false);
+          localStorage.setItem("loginAt", Date.now().toString());
+          setIsAuthenticated(true);
           resolve(true);
         }
         setLoading(false);
