@@ -22,22 +22,14 @@ export default function Index() {
   }
 
   useEffect(() => {
-    if (!showWelcome) {
-      return;
-    } else {
-      const timer = window.setTimeout(() => navigate("/dashboard"), 4000);
-      return () => window.clearTimeout(timer);
+    if (showWelcome) {
+      const welcomeTimer = window.setTimeout(() => navigate("/dashboard"), 4000);
+      return () => window.clearTimeout(welcomeTimer);
+    } else if (showAgain) {
+      const againTimer = window.setTimeout(() => navigate("/dashboard"), 4000);
+      return () => window.clearTimeout(againTimer);
     }
-  }, [showWelcome, navigate])
-
-  useEffect(() => {
-    if (!showAgain) {
-      return;
-    } else {
-      const timer = window.setTimeout(() => navigate("/dashboard"), 4000);
-      return () => window.clearTimeout(timer);
-    }
-  }, [showAgain, navigate])
+  }, [showWelcome, showAgain, navigate])
 
   if (showWelcome) {
     return (
