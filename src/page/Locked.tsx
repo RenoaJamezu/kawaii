@@ -21,11 +21,11 @@ export default function Locked() {
     <main className="h-screen bg-linear-to-br from-primary to-primary/85
       flex flex-col items-center justify-center gap-6 text-primary-foreground">
 
-      <h1 className="text-5xl font-display animate-pulse">
+      <h1 className="text-5xl font-display animate-pulse fade-slide-top">
         Not yet love
       </h1>
 
-      <p className="text-xl opacity-90">
+      <p className="text-xl opacity-90 fade-slide-top">
         Countdown until our special day
       </p>
 
