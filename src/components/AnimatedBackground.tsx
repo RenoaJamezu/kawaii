@@ -7,20 +7,18 @@ interface Props {
 
 const AnimatedBackground: React.FC<Props> = ({ children }) => {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-linear-to-r from-purple-500 via-pink-500 to-red-500 bg-size-[200%_200%] animate-[gradientBG_15s_ease_infinite]">
+    <div className="relative w-full min-h-screen overflow-hidden">
       
-      {[...Array(30)].map((_, i) => (
+      {[...Array(50)].map((_, i) => (
         <div
           key={i}
-          className="absolute rounded-full bg-white opacity-70 animate-[floatParticles_10s_linear_infinite]"
+          className="absolute rounded-full bg-white animate-[floatParticles_10s_linear_infinite] text-2xl"
           style={{
-            width: `${2 + Math.random() * 6}px`,
-            height: `${2 + Math.random() * 6}px`,
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
             animationDuration: `${5 + Math.random() * 10}s`,
           }}
-        ></div>
+        >🩷</div>
       ))}
 
       <div className="relative z-10">{children}</div>
