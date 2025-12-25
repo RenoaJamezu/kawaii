@@ -11,4 +11,9 @@ export const MUSIC_TRACKS: MusicTrack[] = [
     title: "Ngiti - The Juans",
     src: "/musics/Ngiti-The-Juans.mp3",
   },
+  {
+    id: "music-003",
+    title: "Ginintuang Tanawin - Wilbert Ross",
+    src: "/musics/Ginintuang-Tanawin-Wilbert-Ross.mp3",
+  },
 ];
