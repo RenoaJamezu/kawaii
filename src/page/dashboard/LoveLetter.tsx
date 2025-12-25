@@ -4,17 +4,20 @@ import {
   AccordionItem,
   AccordionTrigger
 } from "@/components/ui/accordion";
+import {
+  getTimeLeft,
+  resolveLetter,
+  sortLoveLetters
+} from "@/utils/letters";
 import { LOVE_LETTERS } from "@/constants/letters.index";
 import { useNow } from "@/hooks/useNow";
-import { resolveLetter } from "@/utils/letters";
-import { sortLoveLetters } from "@/utils/sortLetters";
-import { getTimeLeft } from "@/utils/time";
 
 export default function LoveLetter() {
   const now = useNow();
   const sortedLetters = sortLoveLetters(LOVE_LETTERS, now);
 
   return (
+    // TODO: add search functionality based on title
     <div className="bg-white rounded-xl w-full h-full p-5 overflow-y-auto fade-slide-top custom-scrollbar">
       <h1 className="font-display text-primary font-bold text-xl mb-3">Latest</h1>
 
