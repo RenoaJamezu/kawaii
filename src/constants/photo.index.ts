@@ -1,0 +1,19 @@
+import type { Photo } from "./photo.meta";
+
+export const PHOTOS: Photo[] = [
+  {
+    id: "img-001",
+    src: "/images/img-001.png",
+    date: "Sept 5, 2025"
+  },
+  {
+    id: "img-002",
+    src: "/images/img-002.png",
+    date: "Sept 27, 2025"
+  },
+  {
+    id: "img-003",
+    src: "/images/img-003.png",
+    date: "Sept 11, 2025"
+  },
+];
