@@ -85,7 +85,12 @@ export default function LoveLetter() {
                   </>
                 ) : (
                   <>
-                    <p className="mb-5 whitespace-pre-line">
+                    <img
+                      src={letter.gif}
+                      alt=""
+                      className="w-24 fade-slide-top caret-transparent mt-2 mx-auto"
+                    />
+                    <p className="mb-5 whitespace-pre-line font-mono">
                       {message}
                     </p>
                     <p className="text-right text-sm opacity-70">

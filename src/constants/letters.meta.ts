@@ -4,4 +4,5 @@ export interface LoveLetterMeta {
   date: string;
   unlockAt?: number;
   envKey: string;
+  gif?: string;
 }
