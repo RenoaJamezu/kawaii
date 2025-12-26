@@ -30,7 +30,7 @@ export default function Navbar() {
           {({ isActive }) => (
             <Button
               variant={isActive ? "secondary" : "ghost"}
-              className={`rounded-full m-2 ${isActive ? "text-primary" : "text-white hover:text-primary"}`}
+              className={`rounded-full mx-1 ${isActive ? "text-primary" : "text-white hover:text-primary"}`}
             >
               <span>{label}</span>
             </Button>
