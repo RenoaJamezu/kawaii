@@ -26,4 +26,19 @@ export const PHOTOS: Photo[] = [
     src: "/images/img-005.png",
     date: "Sept 28, 2025"
   },
+  {
+    id: "img-006",
+    src: "/images/img-006.png",
+    date: "Sept 28, 2025"
+  },
+  {
+    id: "img-007",
+    src: "/images/img-007.png",
+    date: "Sept 28, 2025"
+  },
+  {
+    id: "img-008",
+    src: "/images/img-008.png",
+    date: "Sept 28, 2025"
+  },
 ];
