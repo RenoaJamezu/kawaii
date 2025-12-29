@@ -21,7 +21,7 @@ export default function LoveLetter() {
     <div className="bg-white rounded-xl w-full h-full p-5 overflow-y-auto fade-slide-top custom-scrollbar">
       <h1 className="font-display text-primary font-bold text-xl mb-3">Latest</h1>
 
-      <Accordion type="single" collapsible defaultValue={sortedLetters[0]?.id}>
+      <Accordion type="single" collapsible>
         {sortedLetters.map((letter) => {
           const { isLocked, message } = resolveLetter(
             letter.envKey,
